@@ -1,0 +1,206 @@
+/*Fuentes de texto*/
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap");
+
+h1,
+h2,
+h3 {
+	font-family: "IBM Plex Mono", monospace;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap");
+
+p {
+	font-family: "Tilt Neon", sans-serif;
+	line-height: 25px;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+
+/*Color Body*/
+body {
+	background: rgb(3, 29, 21);
+	background: linear-gradient(
+		90deg,
+		rgb(5, 64, 46) 0%,
+		rgba(0, 98, 65, 1) 50%,
+		rgba(0, 99, 92, 1) 100%
+	);
+	color: white;
+}
+
+/*Texto Header*/
+.texto-hero {
+	font-size: 6rem;
+	font-weight: 600;
+	color: #ffffff; /* Color personalizado */
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4); /* Sombra del texto */
+	letter-spacing: 2px; /* Espaciado entre letras */
+	line-height: 1.2; /* Altura de línea para mejorar la legibilidad */
+}
+
+/*Imagen y degradado header*/
+.hero-header {
+	background: linear-gradient(rgba(15, 23, 43, 0.5), rgba(15, 23, 43, 0.9)),
+		url(/assets/stock/header2.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 80vh;
+}
+
+/*Colores nav*/
+.navegacion {
+	background: rgb(3, 29, 21);
+	background: linear-gradient(
+		90deg,
+		rgb(0, 64, 59) 100%,
+		rgb(12, 38, 29) 50%,
+		rgb(0, 64, 59) 100%
+	);
+	color: white;
+}
+/*Colores footer*/
+.footer-comun {
+	background: rgb(3, 29, 21);
+	background: linear-gradient(
+		90deg,
+		rgb(2, 26, 24) 100%,
+		rgb(12, 38, 29) 50%,
+		rgb(0, 64, 59) 100%
+	);
+	color: white;
+}
+
+/*Cabecera pagina carta*/
+.bg-image {
+	background-image: url(/assets/stock/vertical-pizzas.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+/*Imagenes delivery*/
+.moving-image {
+	max-width: 100px;
+	height: auto;
+}
+
+/*iconos reviews*/
+.review-thumbnail {
+	border-radius: 50%;
+	width: 150px;
+	height: 150px;
+	object-fit: cover;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	transition: transform 0.3s;
+}
+
+/*animacion hover*/
+.review-thumbnail:hover {
+	transform: scale(1.1);
+}
+
+/*animacion hover*/
+.style_featured {
+	text-align: center;
+}
+.style_featured > div > div {
+	padding: 10px;
+	border: 1px solid transparent;
+	border-radius: 4px;
+	transition: 0.5s;
+}
+.style_featured > div:hover > div {
+	margin-top: +19px;
+	border: 1px solid rgb(202, 249, 196);
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 9px 9px 9px;
+	background: rgba(153, 200, 250, 0.1);
+	transition: 1s;
+}
+
+.style_menu_item > div > div {
+	margin-top: +19px;
+	border: 1px solid rgb(194, 255, 183);
+	background: rgba(153, 200, 250, 0.1);
+	border-radius: 10px;
+}
+
+/*circulo precios*/
+.container-menu .price-circle {
+	width: 64px;
+	height: 64px;
+	line-height: 64px;
+	border-radius: 50%;
+	color: #fff;
+	background-color: #054732;
+	vertical-align: middle;
+	display: inline-block;
+}
+/*animacion hover*/
+
+/*Reviews Section*/
+section {
+	display: grid;
+	place-items: center;
+	height: 100vh;
+}
+.section-header {
+	position: relative;
+	padding-bottom: 10px;
+	text-align: center;
+	font-weight: 900;
+	padding-bottom: 25px;
+	color: #fff;
+}
+.section-header:after {
+	content: "";
+	height: 3px;
+	width: 200px;
+	position: absolute;
+	bottom: 0;
+	left: calc(50% - 100px);
+	background: #fff;
+}
+
+.testimonials {
+	max-width: 1000px;
+	padding: 0 15px 50px;
+	margin: 0 auto 80px auto;
+}
+.single-item {
+	background: #fff;
+	color: #111;
+	padding: 15px;
+	margin: 50px 15px;
+}
+.profile {
+	margin-bottom: 30px;
+	text-align: center;
+}
+.img-area img {
+	height: 200px;
+	width: 200px;
+	border-radius: 50%;
+	border: 7px solid rgb(1, 135, 77);
+}
+.content {
+	font-size: 18px;
+}
+.content p {
+	text-align: justify;
+}
+.content p span {
+	font-size: 48px;
+	margin-right: 20px;
+	color: rgb(255, 219, 14);
+}
+.socials i {
+	margin-right: 25px;
+}
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+	background-color: rgb(15, 36, 23);
+}
