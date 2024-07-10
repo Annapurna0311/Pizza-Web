@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+
+		<title>Menú de La Pecora</title>
+		<!-- Bootstrap icons-->
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
+		<!-- Bootstrap CSS-->
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+			crossorigin="anonymous" />
+		<!-- Bootstrap JS-->
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+			crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="/styles/custom.css" />
+		<link
+			rel="icon"
+			href="../assets/designs/logotipo-pecora.png"
+			type="image/x-icon" />
+	</head>
+
+	<body>
+		<nav class="navbar navbar-expand-lg bg-transparent py-0">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="/index.html">
+					<img
+						src="/assets/designs/logotipo-pecora.png"
+						alt="logo"
+						height="50px" />
+				</a>
+
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-bs-toggle="collapse"
+					data-bs-target="#restaurant-navbar"
+					aria-controls="restaurant-navbar"
+					aria-expanded="false"
+					aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+				<div
+					class="collapse navbar-collapse justify-content-between"
+					id="restaurant-navbar">
+					<ul class="navbar-nav ms-auto">
+						<li class="nav-item px-3">
+							<a href="../index.html" class="nav-link text-light">Inicio</a>
+						</li>
+						<li class="nav-item px-3">
+							<a
+								href="../index.html#Recomendaciones"
+								class="nav-link text-light"
+								>Recomendado</a
+							>
+						</li>
+						<li class="nav-item px-3">
+							<a href="/pages/blog.html" class="nav-link text-light">Blog</a>
+						</li>
+						<li class="nav-item px-3">
+							<a href="/pages/menu.html" class="nav-link text-light">Carta</a>
+						</li>
+						<li class="nav-item px-3">
+							<a href="/pages/about.html" class="nav-link text-light"
+								>Contacto</a
+							>
+						</li>
+						<li class="nav-item dropdown px-3">
+							<a
+								class="nav-link dropdown-toggle text-white"
+								href="#"
+								id="navbarDropdown"
+								role="button"
+								data-bs-toggle="dropdown"
+								aria-expanded="false">
+								<i class="bi bi-brightness-high"></i>
+							</a>
+							<ul
+								class="dropdown-menu dropdown-menu-sm"
+								aria-labelledby="navbarDropdownMenu">
+								<li>
+									<a class="dropdown-item" href="#">
+										<i class="bi bi-sun"></i> Modo Claro
+									</a>
+								</li>
+								<li>
+									<a class="dropdown-item" href="#">
+										<i class="bi bi-moon"></i> Modo Oscuro
+									</a>
+								</li>
+							</ul>
+						</li>
+						<li class="nav-item px-3">
+							<form class="d-flex">
+								<input
+									class="form-control me-2"
+									type="search"
+									placeholder="Buscar"
+									aria-label="Search" />
+								<button class="btn bg-info" type="submit">Buscar</button>
+							</form>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<div
+			class="col-12 col-sm-10 col-md-8 col-lg-6 col-xl-6 col-xxl-8 mx-auto px-4 overflow-hidden">
+			<div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+				<div class="col-10 col-sm-8 col-lg-6">
+					<img
+						src="/assets/stock/vertical-pizzas.jpg"
+						class="d-block mx-lg-auto img-fluid" />
+				</div>
+				<div class="col-lg-6">
+					<h1 class="display-5 fw-bold lh-1 mb-3">Nuestro delicioso Menu</h1>
+					<p class="lead">
+						En nuestro menu tendras los mejores platos de la cocina italiana
+						empezando por los entrantes, seguido de las pizzas, postres y
+						bebidas. Es una carta completa con todos los platos y sus
+						ingredientes. Tendras acceso a recetas veganas y sus alergeneos
+						tambien.
+					</p>
+					<div class="d-grid gap-2 d-md-flex justify-content-md-start">
+						<a href="#pizzas" class="btn btn-primary btn-lg px-4 me-md-2"
+							>Pizzas</a
+						>
+						<a href="#postres" class="btn btn-outline-info btn-lg px-4"
+							>Postres</a
+						>
+					</div>
+				</div>
+				<div class="container py-5 d-none d-sm-block">
+					<aside class="bg-opacity-25 bg-body rounded-3 p-4 p-sm-5 mt-5">
+						<div
+							class="d-flex align-items-center justify-content-between flex-column flex-xl-row text-center text-xl-start">
+							<div class="mb-4 mb-xl-0 w-100">
+								<div class="fs-3 fw-bold text-white">
+									Quieres que te avisemos cuando tengamos ofertas?
+								</div>
+								<div class="text-white-50">
+									Dejanos tu email y te escribiremos con las promociones.
+								</div>
+							</div>
+							<div class="ms-xl-4 w-100">
+								<div class="input-group mb-2">
+									<input
+										class="form-control w-90"
+										type="text"
+										placeholder="Correo electrónico..." />
+									<button
+										class="btn btn-outline-light"
+										id="button-newsletter"
+										type="button">
+										Enviar
+									</button>
+								</div>
+								<div class="small text-white-50">
+									No te vamos a mandar spam. Somos una pizzeria inocente.
+								</div>
+							</div>
+						</div>
+					</aside>
+				</div>
+			</div>
+		</div>
+		<br />
+
+		<!-- Menu -->
+		<div class="container-menu style_featured" id="menu">
+			<div class="container">
+				<div class="page-header" id="entrantes">
+					<h1 class="text-center text-white">Antipasti</h1>
+					<br />
+				</div>
+				<div
+					class="row align-items-center style_menu_item shadow rounded-2 border-3">
+					<div class="col-md-6 text-center px-5">
+						<img
+							src="/assets/entrantes/ensalada.jpeg"
+							style="border-radius: 10%"
+							class="img-fluid"
+							alt="Antipasti Image" />
+						<br />
+					</div>
+					<div class="col-md-6">
+						<div class="row menu-dish">
+							<div class="col-8">
+								<h4>Croquetas Italianas</h4>
+								<hr />
+								<p>
+									Deliciosas croquetas con bechamel, tomate y jamón serrano.
+								</p>
+							</div>
+							<div class="col-4 menu-price py-3">
+								<span class="price-circle text-center">10.50€</span>
+							</div>
+						</div>
+						<div class="row menu-dish">
+							<div class="col-8">
+								<h4>Supplì de Mozzarella</h4>
+								<hr />
+								<p>
+									Bolas de queso mozzarella fritas en Panko y espolvoreadas con
+									gorgonzola.
+								</p>
+							</div>
+							<div class="col-4 menu-price py-3">
+								<span class="price-circle text-center">14.50€</span>
+							</div>
+						</div>
+						<div class="row menu-dish">
+							<div class="col-8">
+								<h4>Ensalada César</h4>
+								<hr />
+								<p>
+									Fresca lechuga con pollo empanado, queso parmesano en lascas,
+									salsa césar y crujiente de pan.
+								</p>
+							</div>
+							<div class="col-4 menu-price py-3">
+								<span class="price-circle text-center">8.50€</span>
+							</div>
+						</div>
+						<div class="row menu-dish">
+							<div class="col-8">
+								<h4>Ensalada Caprese</h4>
+								<hr />
+								<p>
+									Tradicional ensalada italiana con queso mozzarella fresco y
+									tomate natural.
+								</p>
+							</div>
+							<div class="col-4 menu-price py-3">
+								<span class="price-circle text-center">9.50€</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Nuevo elemento del menu -->
+
+			<br /><br />
+			<div class="container">
+				<div class="page-header" id="pizzas">
+					<h1 class="text-center text-white">Pizzas</h1>
+					<br />
+				</div>
+				<div
+					class="row align-items-center px-2 style_menu_item shadow rounded-2 border-3">
+					<div class="col-md-6 order-md-last text-center">
+						<img
+							src="/assets/pizzas/piza-fake.jpeg"
+							style="border-radius: 10%"
+							class="img-fluid"
+							alt="Pizza Image" />
+						<br />
+					</div>
+					<div class="col-md-6 order-md-first">
+						<div class="row menu-dish">
+							<div class="col-8">
+								<h4>Pizza Margherita</h4>
+								<hr />
+								<p>Mozzarella, tomate y albahaca</p>
+							</div>
+							<div class="col-4 menu-price py-3">
+								<span class="price-circle text-center">10.50€</span>
+							</div>
+						</div>
+						<div class="row menu-dish">
+							<div class="col-8">
+								<h4>Pizza Pepperoni</h4>
+								<hr />
+								<p>Pepperoni, queso y salsa de tomate</p>
+							</div>
+							<div class="col-4 menu-price py-3">
+								<span class="price-circle text-center">11.50€</span>
+							</div>
+						</div>
+						<div class="row menu-dish">
+							<div class="col-8">
+								<h4>Pizza 4 Estaciones</h4>
+								<hr />
+								<p>
+									Una combinación de ingredientes de las cuatro estaciones del
+									año.
+								</p>
+							</div>
+							<div class="col-4 menu-price py-3">
+								<span class="price-circle text-center">9.50€</span>
+							</div>
+						</div>
+						<div class="row menu-dish">
+							<div class="col-8">
+								<h4>Pizza Cuatro Quesos</h4>
+								<hr />
+								<p>Queso azul, mozzarella, parmesano y gorgonzola</p>
+							</div>
+							<div class="col-4 menu-price py-3">
+								<span class="price-circle text-center">12.50€</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<br />
+
+			<!-- Nuevo elemento del menu -->
+
+			<div class="container">
+				<div class="page-header" id="postres">
+					<br />
+					<h1 class="text-center text-white">Postres</h1>
+					<br />
+				</div>
+				<div
+					class="row align-items-center style_menu_item shadow rounded-2 border-3">
+					<div class="col-md-6 text-center px-5">
+						<img
+							src="/assets/postres/tiramisu3.jpeg"
+							style="border-radius: 10%"
+							class="img-fluid"
+							alt="Tiramisu Image" />
+						<br />
+					</div>
+					<div class="col-md-6">
+						<div class="row menu-dish">
+							<div class="col-8">
+								<h4>Tiramisu</h4>
+								<hr />
+								<p>
+									Un postre de capas de bizcocho empapado en café y mascarpone.
+								</p>
+							</div>
+							<div class="col-4 menu-price py-3">
+								<span class="price-circle text-center">7.50€</span>
+							</div>
+						</div>
+						<div class="row menu-dish">
+							<div class="col-8">
+								<h4>Cheesecake</h4>
+								<hr />
+								<p>Un pastel dulce y cremoso de queso con base de galleta.</p>
+							</div>
+							<div class="col-4 menu-price py-3">
+								<span class="price-circle text-center">4.50€</span>
+							</div>
+						</div>
+						<div class="row menu-dish">
+							<div class="col-8">
+								<h4>Helado Italiano</h4>
+								<hr />
+								<p>
+									Helado de crema suave y sabores variados al estilo italiano.
+								</p>
+							</div>
+							<div class="col-4 menu-price py-3">
+								<span class="price-circle text-center">5.50€</span>
+							</div>
+						</div>
+						<div class="row menu-dish">
+							<div class="col-8">
+								<h4>Fruta Fresca</h4>
+								<hr />
+								<p>Una selección de frutas frescas de temporada.</p>
+							</div>
+							<div class="col-4 menu-price py-3">
+								<span class="price-circle text-center">5.50€</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Nuevo elemento del menu -->
+
+			<br /><br />
+			<div class="container">
+				<div class="page-header" id="bebidas">
+					<h1 class="text-center text-white">Bebidas</h1>
+					<br />
+				</div>
+				<div
+					class="row align-items-center px-2 style_menu_item shadow rounded-2 border-3">
+					<div class="col-md-6 order-md-last text-center">
+						<img
+							src="/assets/entrantes/vino-italiano.jpeg"
+							style="border-radius: 10%"
+							class="img-fluid"
+							alt="Bebidas Image" />
+						<br />
+					</div>
+					<div class="col-md-6 order-md-first">
+						<div class="row menu-dish">
+							<div class="col-8">
+								<h4>Martinni</h4>
+								<hr />
+								<p>Una mezcla clásica de vermut y gin con aceitunas o limón.</p>
+							</div>
+							<div class="col-4 menu-price py-3">
+								<span class="price-circle text-center">5.50€</span>
+							</div>
+						</div>
+						<div class="row menu-dish">
+							<div class="col-8">
+								<h4>Limonccello</h4>
+								<hr />
+								<p>Un licor de limón dulce y refrescante, popular en Italia.</p>
+							</div>
+							<div class="col-4 menu-price py-3">
+								<span class="price-circle text-center">4.50€</span>
+							</div>
+						</div>
+						<div class="row menu-dish">
+							<div class="col-8">
+								<h4>Agua con gas</h4>
+								<hr />
+								<p>
+									Agua carbonatada perfecta para acompañar cualquier comida.
+								</p>
+							</div>
+							<div class="col-4 menu-price py-3">
+								<span class="price-circle text-center">2.50€</span>
+							</div>
+						</div>
+						<div class="row menu-dish">
+							<div class="col-8">
+								<h4>Vino de cosecha</h4>
+								<hr />
+								<p>
+									Un vino tinto o blanco producido y embotellado en la región de
+									origen.
+								</p>
+							</div>
+							<div class="col-4 menu-price py-3">
+								<span class="price-circle text-center">3.50€</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<br />
+		</div>
+
+		<!-- Footer-->
+		<footer class="clearfix bg-dark">
+			<div class="container text-center py-2">
+				<div class="row">
+					<div class="col-md-3 d-none d-md-block">
+						<p><span class="bi bi-geo-alt-fill text-info"></span> VISÍTANOS</p>
+						<p>
+							Estamos impulsados por la frescura y calidad sin compromisos, la
+							hospitalidad cordial y una creciente lista de platos
+						</p>
+					</div>
+					<div class="col-md-3 d-none d-md-block">
+						<p><span class="bi bi-clock text-info"></span> HORARIO</p>
+
+						<p>Lun-Vie: 11am - 12pm</p>
+						<p>Sab: 11am - 21pm</p>
+						<p>Dom: Cerrado</p>
+					</div>
+					<div class="col-md-3">
+						<p>
+							<span class="bi bi-sign-intersection-fill text-info"></span>
+							CONTACTO
+						</p>
+						<p>54, Calle del Norte, 45086 Madrid, España</p>
+						<p>+34 123 456 789</p>
+						<p><a href="mailto:mail@example.com">info@pecora.com</a></p>
+					</div>
+					<div class="col-md-3">
+						<p><span class="bi bi-envelope text-info"></span> BOLETÍN</p>
+						<div class="input-group">
+							<input
+								type="text"
+								class="form-control m-1 py-1"
+								placeholder="Correo electrónico..." />
+							<span class="input-group-btn">
+								<button class="btn btn-primary" type="button">
+									Suscribirse
+								</button>
+							</span>
+						</div>
+						<p>
+							<a
+								class="bi bi-twitter footer-socialicon"
+								target="_blank"
+								href="https://twitter.com/"></a>
+							<a
+								class="bi bi-facebook footer-socialicon"
+								target="_blank"
+								href="https://www.facebook.com/"></a>
+							<a
+								class="bi bi-google footer-socialicon"
+								target="_blank"
+								href="https://www.google.com/"></a>
+							<a
+								class="bi bi-linkedin footer-socialicon"
+								target="_blank"
+								href="https://www.linkedin.com/"></a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>
